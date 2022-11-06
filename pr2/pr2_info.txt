@@ -3,3 +3,6 @@ This is Project 2 info file.
 This changes for second commit 
 
 This changes for conflicts
+
+This changes from ghui for checking conflict 
+
