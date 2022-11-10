@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    <hr><br>
+    <h3>List Of Comapnies</h3>
+    {% for dt in data.all %}
+        <table>
+            <tr><li>ID: {{dt.id}}</li> </tr>
+            <tr><li>Company: {{dt.company}}</li></tr>
+            <tr><li>Description: {{dt.description}}</li></tr>
+        </table>
+    
+    {% endfor %}
+    
+
+</body>
+</html>
